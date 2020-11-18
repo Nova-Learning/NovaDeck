@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import { Navbar, Nav, Form, FormControl, Button, Container } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav, Form, FormControl, Button, Container, Badge } from 'react-bootstrap'
 import { signin, signout, useSession } from 'next-auth/client';
 
 const Header = () => {
@@ -15,10 +14,10 @@ const Header = () => {
         }
       `}
       </style>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" fixed="top">
         <Container>
           <Link href="/" passHref>
-            <Navbar.Brand style={{ fontWeight: 700 }}>SlideDeck</Navbar.Brand>
+            <Navbar.Brand style={{ fontWeight: 700 }}>SlideDeck <Badge variant="primary">Beta</Badge></Navbar.Brand>
           </Link>
           <Nav className="mr-auto">
             <Link href="/" passHref>

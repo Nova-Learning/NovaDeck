@@ -2,16 +2,18 @@
 
 html, body {
     font-family: 'Montserrat', sans-serif;
+    height: 100%
 }
 
 .head {
-  display: 'flex';
-  justify-content: 'center';
-  align-items: 'center';
-  background-color: '#23272a';
-  color: 'white';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23272a;
+  color: white;
   font-family: 'Montserrat', sans-serif;
-  height: 100%
+  height: 100vh;
+  text-align: center;
 }
 
 .head h1 {
