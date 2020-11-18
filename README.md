@@ -1,2 +1,2 @@
-# SlideDeck
+# NovaDeck
 ## README to be written.
