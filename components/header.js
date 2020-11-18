@@ -14,60 +14,63 @@ const Header = () => {
         }
       `}
       </style>
-      <Navbar bg="dark" variant="dark" fixed="top">
+      <Navbar bg="dark" variant="dark" fixed="top" expand="sm">
         <Container>
           <Link href="/" passHref>
-            <Navbar.Brand style={{ fontWeight: 700 }}>SlideDeck <Badge variant="primary">Beta</Badge></Navbar.Brand>
+            <Navbar.Brand style={{ fontWeight: 700 }}>NovaSlides <Badge variant="primary">Beta</Badge></Navbar.Brand>
           </Link>
-          <Nav className="mr-auto">
-            <Link href="/" passHref>
-              <Nav.Link style={{ fontWeight: 600 }}>Home</Nav.Link>
-            </Link>
-            <Link href="/about" passHref>
-              <Nav.Link style={{ fontWeight: 600 }}>About</Nav.Link>
-            </Link>
-            <Link href="/pricing" passHref>
-              <Nav.Link style={{ fontWeight: 600 }}>Pricing</Nav.Link>
-            </Link>
+          <Navbar.Toggle aria-controls="expand-nav" />
+          <Navbar.Collapse id="expand-nav">
+            <Nav className="mr-auto">
+              <Link href="/" passHref>
+                <Nav.Link style={{ fontWeight: 600 }}>Home</Nav.Link>
+              </Link>
+              <Link href="/about" passHref>
+                <Nav.Link style={{ fontWeight: 600 }}>About</Nav.Link>
+              </Link>
+              <Link href="/pricing" passHref>
+                <Nav.Link style={{ fontWeight: 600 }}>Pricing</Nav.Link>
+              </Link>
 
-          </Nav>
-          <Form inline>
-          {!session && (
-                <Nav.Link
-                  href="/api/auth/signin"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    signin();
-                  }}
-                  style={{
-                    fontWeight: "600",
-                  }}
-                >
-                  <Button variant="outline-success">Sign In</Button>
-                </Nav.Link>
-              )}
-              {session && (
-                <>
-                  <Link href="/my">
-                    <Nav.Link style={{ fontWeight: 600 }}>
-                    <Button variant="success">My Decks</Button>
-                    </Nav.Link>
-                  </Link>
+            </Nav>
+            <Form inline>
+            {!session && (
                   <Nav.Link
-                    href="/api/auth/signout"
+                    href="/api/auth/signin"
                     onClick={(e) => {
                       e.preventDefault();
-                      signout();
+                      signin();
                     }}
                     style={{
-                      fontWeight: "600"
+                      fontWeight: "600",
                     }}
                   >
-                    <Button variant="outline-danger">Sign Out</Button>
+                    <Button variant="outline-success">Sign In</Button>
                   </Nav.Link>
-                </>
-              )}
-          </Form>
+                )}
+                {session && (
+                  <>
+                    <Link href="/my" passHref>
+                      <Nav.Link style={{ fontWeight: 600 }}>
+                      <Button variant="success">My Decks</Button>
+                      </Nav.Link>
+                    </Link>
+                    <Nav.Link
+                      href="/api/auth/signout"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        signout();
+                      }}
+                      style={{
+                        fontWeight: "600"
+                      }}
+                    >
+                      <Button variant="outline-danger">Sign Out</Button>
+                    </Nav.Link>
+                  </>
+                )}
+            </Form>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </header>

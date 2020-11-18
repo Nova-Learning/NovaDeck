@@ -16,6 +16,26 @@ html, body {
   text-align: center;
 }
 
+.homepage-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23272a;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  text-align: left;
+}
+
+.homepage-header .homepage-header-row {
+  color: black
+}
+
+
 .head h1 {
   font-weight: 700
+}
+
+* {
+	scrollbar-color: #202324 #454a4d;
 }
