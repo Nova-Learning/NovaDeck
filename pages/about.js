@@ -3,7 +3,7 @@ import Header from '../components/header'
 const About = () => (
   <>
     <Header />
-    <h1>About page</h1>
+    <h1>About Page</h1>
   </>
 )
 
