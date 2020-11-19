@@ -56,7 +56,7 @@ const Home = () => (
       <Row style={{ marginTop: "20px" }}>
         <Col>
           <Card style={{ width: '100%' }}>
-            <Card.Header as="h2" style={{ fontWeight: "600" }}>Formative Assessments in many ways.</Card.Header>
+            <Card.Header as="h2" style={{ fontWeight: "600" }}>Formative assessments in many ways.</Card.Header>
             <ListGroup variant="flush">
               <ListGroup.Item>Multiple Choice</ListGroup.Item>
               <ListGroup.Item>Short Answer</ListGroup.Item>
@@ -65,7 +65,7 @@ const Home = () => (
               <ListGroup.Item>Paragraph / Long Answer</ListGroup.Item>
               <ListGroup.Item>Drag-and-Drop</ListGroup.Item>
               <ListGroup.Item>Sliders</ListGroup.Item>
-              <ListGroup.Item>Much more!</ListGroup.Item>
+              <ListGroup.Item>Know the students who haven't yet responded</ListGroup.Item>
             </ListGroup>
           </Card>
         </Col>
@@ -74,13 +74,13 @@ const Home = () => (
             <Card.Header as="h2" style={{ fontWeight: "600" }}>Made by students, for students.</Card.Header>
             <ListGroup variant="flush">
               <ListGroup.Item>Free Forever</ListGroup.Item>
-              <ListGroup.Item>Short Answer</ListGroup.Item>
-              <ListGroup.Item>Drawing</ListGroup.Item>
-              <ListGroup.Item>True/False</ListGroup.Item>
-              <ListGroup.Item>Paragraph / Long Answer</ListGroup.Item>
-              <ListGroup.Item>Drag-and-Drop</ListGroup.Item>
-              <ListGroup.Item>Sliders</ListGroup.Item>
-              <ListGroup.Item>Much more!</ListGroup.Item>
+              <ListGroup.Item>Game-like features!</ListGroup.Item>
+              <ListGroup.Item>Advanced teacher dashboard</ListGroup.Item>
+              <ListGroup.Item>Major customizability</ListGroup.Item>
+              <ListGroup.Item>Keeps students engaged</ListGroup.Item>
+              <ListGroup.Item>Modern yet simple</ListGroup.Item>
+              <ListGroup.Item>Google Slides integration</ListGroup.Item>
+               <ListGroup.Item>View student responses live</ListGroup.Item>
             </ListGroup>
           </Card>
         </Col>
