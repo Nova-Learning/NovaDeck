@@ -2,9 +2,11 @@ import Header from '../components/header'
 import { Container, Row, Col, Button, Card, ListGroup, Form, FormControl, InputGroup } from 'react-bootstrap'
 import Link from 'next/link'
 import ReactPlayer from 'react-player'
+import Footer from '../components/footer'
 
 const Home = () => (
   <>
+    <title>NovaDeck</title>
     <Header />
     <Container fluid className="homepage-header">
       <div>
@@ -52,45 +54,57 @@ const Home = () => (
       <h1>How it Works</h1>
       <ReactPlayer url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
     </Container>
-    <Container className="features" style={{ marginTop: "20px" }}>
-      <Row>
-        <Col style={{ textAlign: "center" }}>
-          <h1 style={{ fontWeight: "700" }}>What makes us different?</h1>
-        </Col>
-      </Row>
-      <Row style={{ marginTop: "20px" }}>
-        <Col>
-          <Card style={{ width: '100%' }}>
-            <Card.Header as="h2" style={{ fontWeight: "600" }}>Formative assessments in many ways.</Card.Header>
-            <ListGroup variant="flush">
-              <ListGroup.Item>Multiple Choice</ListGroup.Item>
-              <ListGroup.Item>Short Answer</ListGroup.Item>
-              <ListGroup.Item>Drawing</ListGroup.Item>
-              <ListGroup.Item>True/False</ListGroup.Item>
-              <ListGroup.Item>Paragraph / Long Answer</ListGroup.Item>
-              <ListGroup.Item>Drag-and-Drop</ListGroup.Item>
-              <ListGroup.Item>Sliders</ListGroup.Item>
-              <ListGroup.Item>Know the students who haven't yet responded</ListGroup.Item>
-            </ListGroup>
-          </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: '100%' }}>
-            <Card.Header as="h2" style={{ fontWeight: "600" }}>Made by students, for students.</Card.Header>
-            <ListGroup variant="flush">
-              <ListGroup.Item>Free Forever</ListGroup.Item>
-              <ListGroup.Item>Game-like features!</ListGroup.Item>
-              <ListGroup.Item>Advanced teacher dashboard</ListGroup.Item>
-              <ListGroup.Item>Major customizability</ListGroup.Item>
-              <ListGroup.Item>Keeps students engaged</ListGroup.Item>
-              <ListGroup.Item>Modern yet simple</ListGroup.Item>
-              <ListGroup.Item>Google Slides integration</ListGroup.Item>
-               <ListGroup.Item>View student responses live</ListGroup.Item>
-            </ListGroup>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+    <div className="features">
+      <Container>
+        <Row>
+          <Col style={{ textAlign: "center" }}>
+            <h1 style={{ fontWeight: "700" }}>What makes us different?</h1>
+          </Col>
+        </Row>
+        <Row style={{ marginTop: "20px" }}>
+          <Col>
+            <Card style={{ width: '100%' }}>
+              <Card.Header as="h2" style={{ fontWeight: "600" }}>Formative assessments in a fun new way.</Card.Header>
+              <ListGroup variant="flush">
+                <ListGroup.Item>Multiple Choice</ListGroup.Item>
+                <ListGroup.Item>Short Answer</ListGroup.Item>
+                <ListGroup.Item>Drawing</ListGroup.Item>
+                <ListGroup.Item>True/False</ListGroup.Item>
+                <ListGroup.Item>Paragraph / Long Answer</ListGroup.Item>
+                <ListGroup.Item>Drag-and-Drop</ListGroup.Item>
+                <ListGroup.Item>Sliders</ListGroup.Item>
+                <ListGroup.Item>Know the students who haven't yet responded</ListGroup.Item>
+              </ListGroup>
+            </Card>
+          </Col>
+          <Col>
+            <Card style={{ width: '100%' }}>
+              <Card.Header as="h2" style={{ fontWeight: "600" }}>Made by students, for students.</Card.Header>
+              <ListGroup variant="flush">
+                <ListGroup.Item>Free Forever</ListGroup.Item>
+                <ListGroup.Item>Game-like features</ListGroup.Item>
+                <ListGroup.Item>Advanced teacher dashboard</ListGroup.Item>
+                <ListGroup.Item>Major customizability</ListGroup.Item>
+                <ListGroup.Item>Keeps students engaged</ListGroup.Item>
+                <ListGroup.Item>Modern yet simple</ListGroup.Item>
+                <ListGroup.Item>Google Slides integration</ListGroup.Item>
+                <ListGroup.Item>View student responses live</ListGroup.Item>
+              </ListGroup>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+    <div className="join-us">
+      <Container fluid>
+        <h1>What are you waiting for?</h1>
+        <h3>Come join the next generation of learning.</h3>
+        <Link href="/auth/login" passHref>
+          <Button variant="success">Come join us!</Button>
+        </Link>
+      </Container>
+    </div>
+    <Footer />
   </>
 )
 

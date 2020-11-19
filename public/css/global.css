@@ -65,6 +65,161 @@ html, body {
   font-weight: 700
 }
 
+.features {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background-color: #23272a;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.features .card {
+  margin-bottom: 16px;
+}
+
+.features h1 {
+  color:white;
+  margin-top: 16px;
+}
+
+.join-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2f33;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  height: 25vh;
+  color: white;
+}
+
+.about-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23272a;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  height: 100vh;
+  color: white;
+}
+
+.about-header h1 {
+  font-weight: 700;
+}
+
+.about-nl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2f33;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  height: 75vh;
+  color: white;
+}
+
+.about-nl h1 {
+  font-weight: 700;
+}
+
+.about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23272a;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  height: 75vh;
+  color: white;
+}
+
+.about-main h1 {
+  font-weight: 700;
+}
+
+.about-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2f33;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  height: 75vh;
+  color: white;
+}
+
+.about-contact h1 {
+  font-weight: 700;
+}
+
+.pricing-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23272a;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  height: 50vh;
+  color: white;
+}
+
+.pricing-header h1 {
+  font-weight: 700;
+}
+
+.pricing-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2f33;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.pricing-boxes h1 {
+  color: white;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.pricing-boxes h5 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.pricing-boxes .card {
+  margin-bottom: 16px;
+}
+
+.footer{
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.footer a {
+  text-decoration: none!important;
+  color: white;
+  font-weight: 700;
+}
+
+.heart{
+  color:#e25555;
+}
+
+.footer a:hover {
+  text-decoration: none!important;
+  color: white;
+}
+
 * {
 	scrollbar-color: #202324 #454a4d;
 }

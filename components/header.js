@@ -17,15 +17,16 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" fixed="top" expand="sm">
         <Container>
           <Link href="/" passHref>
-            <Navbar.Brand style={{ fontWeight: 700 }}>
+            <Navbar.Brand style={{ fontWeight: 700, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
               <img
                 alt=""
                 src="/media/LogoDesign.svg"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
+                style={{ marginRight: '4px' }}
               />{' '}
-              NovaSlides <Badge variant="primary">Beta</Badge>
+              NovaDeck <Badge variant="primary" style={{ marginLeft: '4px' }}>Beta</Badge>
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="expand-nav" />
