@@ -27,10 +27,39 @@ html, body {
   text-align: left;
 }
 
+.homepage-header h1 {
+  font-weight: 700;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2f33;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  height: 50vh;
+  text-align: left;
+}
+
+.video-container h1 {
+  font-weight: 700;
+  margin-right: 40px;
+}
+
 .homepage-header .homepage-header-row {
   color: black
 }
 
+.homepage-header .homepage-header-row .card {
+  margin-bottom: 25px;
+}
+
+.homepage-header .card .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .head h1 {
   font-weight: 700

@@ -17,7 +17,16 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" fixed="top" expand="sm">
         <Container>
           <Link href="/" passHref>
-            <Navbar.Brand style={{ fontWeight: 700 }}>NovaSlides <Badge variant="primary">Beta</Badge></Navbar.Brand>
+            <Navbar.Brand style={{ fontWeight: 700 }}>
+              <img
+                alt=""
+                src="/media/LogoDesign.svg"
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+              NovaSlides <Badge variant="primary">Beta</Badge>
+            </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="expand-nav" />
           <Navbar.Collapse id="expand-nav">
@@ -36,7 +45,7 @@ const Header = () => {
             <Form inline>
             {!session && (
                   <Nav.Link
-                    href="/api/auth/signin"
+                    href="/auth/login"
                     onClick={(e) => {
                       e.preventDefault();
                       signin();

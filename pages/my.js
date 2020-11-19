@@ -21,7 +21,8 @@ const Profile = () => {
     <Header />
     <Container fluid className="head">
         <div>
-            <h1>Please Sign In to view this page.</h1>
+          <meta http-equiv="refresh" content="0;url=/api/auth/signin" />
+          <h1>Redirecting to Sign In. If you aren't redirected, click <Link href="/api/auth/signin">here</Link></h1>
         </div>
     </Container>
     </>

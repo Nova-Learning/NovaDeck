@@ -1,6 +1,7 @@
 import Header from '../components/header'
 import { Container, Row, Col, Button, Card, ListGroup, Form, FormControl, InputGroup } from 'react-bootstrap'
 import Link from 'next/link'
+import ReactPlayer from 'react-player'
 
 const Home = () => (
   <>
@@ -11,11 +12,11 @@ const Home = () => (
         <h3>Engaging and fun formative interactive assessments. By students, for students.</h3>
         <Row className="homepage-header-row" xs={1} sm={1} md={3} lg={3}>
           <Col xs="auto" sm="auto" md={3} lg={3} xl={3}>
-            <Card style={{ marginBottom: "20px" }}>
+            <Card style={{ marginBottom: "20px", height: "100%", width: "100%" }}>
               <Card.Header>Students: Join a Deck</Card.Header>
               <Container style={{ marginTop: "8px" }}>
                 <InputGroup className="mb-2">
-                  <FormControl id="joinPod" placeholder="Code" />
+                  <FormControl id="joinPod" placeholder="Enter Code" />
                   <InputGroup.Append>
                     <Button variant="success">Join</Button>
                   </InputGroup.Append>
@@ -24,8 +25,8 @@ const Home = () => (
 
             </Card>
           </Col>
-          <Col>
-            <Card style={{ marginBottom: "20px" }}>
+          <Col xs="auto" sm="auto" md={3} lg={3} xl={3}>
+            <Card style={{ marginBottom: "20px", height: "100%", width: "100%" }}>
               <Card.Header>Teachers: Join now!</Card.Header>
               <Container style={{ marginTop: "8px", marginBottom: "8px" }}>
                 <Link href="/api/auth/signin" passHref>
@@ -34,8 +35,8 @@ const Home = () => (
               </Container>
             </Card>
           </Col>
-          <Col>
-            <Card style={{ marginBottom: "20px" }}>
+          <Col xs="auto" sm="auto" md={3} lg={3} xl={3}>
+            <Card style={{ marginBottom: "20px", height: "100%", width: "100%" }}>
               <Card.Header>Districts: Learn more</Card.Header>
               <Container style={{ marginTop: "8px", marginBottom: "8px" }}>
                 <Link href="/api/auth/signin" passHref>
@@ -47,7 +48,11 @@ const Home = () => (
         </Row>
       </div>
     </Container>
-    <Container style={{ marginTop: "20px" }}>
+    <Container fluid className="video-container">
+      <h1>How it Works</h1>
+      <ReactPlayer url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+    </Container>
+    <Container className="features" style={{ marginTop: "20px" }}>
       <Row>
         <Col style={{ textAlign: "center" }}>
           <h1 style={{ fontWeight: "700" }}>What makes us different?</h1>
