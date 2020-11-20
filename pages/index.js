@@ -51,7 +51,7 @@ const Home = () => (
       </div>
     </Container>
     <Container fluid className="video-container">
-      <h1>How it Works</h1>
+      <h1>How It Works</h1>
       <ReactPlayer url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
     </Container>
     <div className="features">
