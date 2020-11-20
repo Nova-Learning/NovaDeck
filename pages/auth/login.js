@@ -1,19 +1,24 @@
 import React from 'react'
 import Header from '../../components/header'
-import { Container, Button, Form, FormControl } from 'react-bootstrap'
-import { providers, signIn } from 'next-auth/client'
+import { Container, Button, Form, FormControl, Row, Col } from 'react-bootstrap'
+import { providers, signIn, csrfToken } from 'next-auth/client'
+import { FcGoogle } from 'react-icons/fc'
+import Footer from '../../components/footer'
 
 export default function SignIn({ providers }) {
   return (
     <>
         <Header />
-        <Container fluid className="head">
-            {Object.values(providers).map(provider => (
-            <div key={provider.name}>
-                <Button style={{ backgroundColor: "white", color: "black", fontWeight: 700 }} onClick={() => signIn(provider.id)}>Sign in with {provider.name}</Button>
-            </div>
-            ))}
+        <title>Login | NovaDeck</title>
+        <Container fluid className="login-head">
+            <Row>
+                <Col className="my-auto">
+                  <Button variant="light" size="lg" block onClick={() => signIn("google", { callbackUrl: "/my" })} style={{ fontWeight: 600 }}><FcGoogle /> Sign in with Google</Button>
+                </Col>
+            </Row>
+
         </Container>
+        <Footer />
     </>
   )
 }

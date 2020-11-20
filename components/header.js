@@ -69,7 +69,7 @@ const Header = () => {
                       href="/api/auth/signout"
                       onClick={(e) => {
                         e.preventDefault();
-                        signout();
+                        signout({ callbackUrl: "/" });
                       }}
                       style={{
                         fontWeight: "600"

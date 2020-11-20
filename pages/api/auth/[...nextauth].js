@@ -14,6 +14,8 @@ const options = {
     })
   ],
 
+  secret: process.env.SECRET_KEY,
+
   pages: {
     signIn: '/auth/login',
     newUser: '/my?new=true'

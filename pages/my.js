@@ -2,6 +2,7 @@ import { useSession } from 'next-auth/client';
 import Header from '../components/header'
 import { Container, Spinner, Button } from 'react-bootstrap'
 import Link from 'next/link';
+import Footer from '../components/footer';
 
 const Profile = () => {
   const [session, loading] = useSession();
@@ -31,9 +32,13 @@ const Profile = () => {
   return (
     <>
         <Header />
-        <Container fluid className="head">
-
+        <Container fluid className="my-head">
+          <h1>My Decks</h1>
         </Container>
+        <Container fluid className="my-container">
+          
+        </Container>
+        <Footer />
     </>
 
   );

@@ -14,7 +14,10 @@
     "next-auth": "^3.1.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.4.0",
+    "react-dark-mode-toggle": "^0.0.10",
     "react-dom": "^16.13.1",
-    "react-player": "^2.7.0"
+    "react-icons": "^3.11.0",
+    "react-player": "^2.7.0",
+    "use-dark-mode": "^2.3.1"
   }
 }
