@@ -21,25 +21,26 @@ const Pricing = () => (
             <Card style={{ width: '100%' }}>
               <Card.Header as="h2" style={{ fontWeight: "600" }}>Free Forever</Card.Header>
               <ListGroup variant="flush">
-                <ListGroup.Item>Up to 3 Teachers per Slideshow</ListGroup.Item>
-                <ListGroup.Item>Integrated Games</ListGroup.Item>
+                <ListGroup.Item>Add Up To Three Additional Teachers / Assistant Teachers In A Deck!</ListGroup.Item>
+                <ListGroup.Item>Integrated Games  To Make Learning Fun!</ListGroup.Item>
                 <ListGroup.Item>Google Slides Connection</ListGroup.Item>
-                <ListGroup.Item>Up to 100 students per class</ListGroup.Item>
+                <ListGroup.Item>Up to 100 Students Per Presentation</ListGroup.Item>
                 <ListGroup.Item>Live Responses</ListGroup.Item>
-                <ListGroup.Item>Download In-depth class data after the slideshow has ended</ListGroup.Item>
-                <ListGroup.Item>See who has not responded</ListGroup.Item>
+                <ListGroup.Item>Download In-depth Class Data After The Slideshow Has Ended</ListGroup.Item>
+                <ListGroup.Item>See Who Has Not Responded, Live!</ListGroup.Item>
                 <ListGroup.Item>Multiple Types of Slides (Drawing, Draggable Responses, etc)</ListGroup.Item>
-                <ListGroup.Item>Timelimit to lock student's responses.</ListGroup.Item>
+                <ListGroup.Item>Timelimit To Lock Student's Responses.</ListGroup.Item>
                 <ListGroup.Item>Create Student-Paced Slideshows</ListGroup.Item>
-                <ListGroup.Item>Optional Chatbox during the presentation</ListGroup.Item>
-                <ListGroup.Item>Add audio and video to slides</ListGroup.Item>
-                <ListGroup.Item>Some ads (Ads are never on the presentation page)</ListGroup.Item>
+                <ListGroup.Item>Optional Chatbox During The Presentation</ListGroup.Item>
+                <ListGroup.Item>Add Audio And Video To Slides</ListGroup.Item>
+                <ListGroup.Item>Some Ads (Ads are never on the presentation page)</ListGroup.Item>
                 <ListGroup.Item>Live YouTube Videos</ListGroup.Item>
-                <ListGroup.Item>Up to two response types per slide</ListGroup.Item>
+                <ListGroup.Item>Up To Two Response Types Per Slide</ListGroup.Item>
+                 <ListGroup.Item>And So More More!</ListGroup.Item>
                 <ListGroup.Item><h2>$0 / Month</h2></ListGroup.Item>
                 <ListGroup.Item>
                     <Link href="/auth/login" passHref>
-                        <Button variant="success">Get Started</Button>
+                        <Button variant="success">Get Started For Free!</Button>
                     </Link>
                 </ListGroup.Item>
               </ListGroup>
@@ -49,22 +50,24 @@ const Pricing = () => (
             <Card style={{ width: '100%' }}>
               <Card.Header as="h2" style={{ fontWeight: "600" }}>Premium</Card.Header>
               <ListGroup variant="flush">
-                <ListGroup.Item>Same features as the Free Forever plan</ListGroup.Item>
-                <ListGroup.Item>Up to 10 teachers per slideshow</ListGroup.Item>
-                <ListGroup.Item>Up to 200 students per class</ListGroup.Item>
+                <ListGroup.Item>Same features as the Free Forever Plan</ListGroup.Item>
+                <ListGroup.Item>Up To 10 Teachers / Assistant Teachers Per Slideshow</ListGroup.Item>
+                <ListGroup.Item>Up to 200 students Per Presentation</ListGroup.Item>
                 <ListGroup.Item>NO Ads</ListGroup.Item>
-                <ListGroup.Item>Up to 5 response types per slide</ListGroup.Item>
+                <ListGroup.Item>Up to 5 response types Per Slide</ListGroup.Item>
+                <ListGroup.Item>You're Able To Help Us Keep Adding New Features To Ensure Learning Stays Simple & Fun</ListGroup.Item>
+                 <ListGroup.Item>And So More More!</ListGroup.Item> 
                 <ListGroup.Item><h2>$20* / Month</h2></ListGroup.Item>
                 <ListGroup.Item>
                     <Link href="/auth/login" passHref>
-                        <Button variant="success">Get Started</Button>
+                        <Button variant="success">Get Started Now!</Button>
                     </Link>
                 </ListGroup.Item>
               </ListGroup>
             </Card>
           </Col>
         </Row>
-        <h5>* subject to change.</h5>
+        <h5>Our Pricing Page is subject to change at any time.</h5>
       </Container>
     </div>
 
